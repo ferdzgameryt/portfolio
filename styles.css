@@ -39,6 +39,12 @@ body {
     box-sizing: border-box;
 }
 
+.navbar :hover{
+    color: #0dcdfd;
+    transition: color 0.5s;
+    text-decoration: underline;
+}
+
 .nav-link {
     margin-left: 15px;
     margin-top: 5px;
@@ -77,7 +83,7 @@ body {
 }
 
 .info {
-    font-size: 20px;
+    font-size: 35px;
     max-width: 400px;
 }
 
@@ -124,23 +130,12 @@ body {
     text-align: center;
 }
 
-/* CLIPS */
-.clips-section {
-    margin-top: 60px;
+.card img{
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
 }
 
-.clips-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.clip {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
 
 /* =========================
    TABLET (321px–768px)
