@@ -29,7 +29,7 @@
                     class = "rounded-lg cursor-pointer"
                     onclick="openModal(this.src)">
 
-                <p class="block font-bold text-white-100 pt-2 mbe-3 m-2 text-2xl"> MS Word Associate </p>
+                <p class="block font-bold text-white-100 pt-2 mbe-3 m-2 text-2xl"> MS Word </p>
 
                 <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
                     target="_blank" 
@@ -44,7 +44,7 @@
                     class = "rounded-lg cursor-pointer" 
                     onclick="openModal(this.src)">
 
-                <p class="block font-bold text-white-100 pt-2 mbe-3 m-2 text-2xl"> MS PowerPoint Associate </p>
+                <p class="block font-bold text-white-100 pt-2 mbe-3 m-2 text-2xl"> MS PowerPoint </p>
 
                 <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
                     target="_blank" 
@@ -53,4 +53,21 @@
             </div>
         </div>
 </body>
+<div id="imageModal" class="fixed inset-0 hidden bg-black/80 flex items-center justify-center z-50">
+            <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded shadow-lg">
+        </div>
+
+        <script>
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+
+            function openModal(src) {
+            modal.classList.remove("hidden");
+            modalImg.src = src;
+            }
+
+            modal.addEventListener("click", () => {
+            modal.classList.add("hidden");
+            });
+        </script>
 </html>
