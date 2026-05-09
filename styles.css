@@ -135,7 +135,9 @@ body {
     transition: 0.3s;
     box-shadow: 5px 5px #ffffff;
 }
-
+#cert-container{
+  transition-duration: 0.3s;
+}
 
 /* =========================
    TABLET (321px–768px)
